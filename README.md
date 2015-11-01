@@ -23,3 +23,8 @@ The following values are set during runtime. You can override these in a
 * `GIT_INIT`: Whether or not to initialize a git repository.
 * `README`: The name of the README file to be created, if any. Leave empty if
   no README is desired.
+
+Any of these are available to be temporarily overridden if you set a temporary
+environment variable.
+
+    BASE_PATH=github.com/mgirouard goinit foobar
