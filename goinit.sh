@@ -11,8 +11,9 @@ GIT_INIT=${GIT_INIT:-true}
 README=${README:-README.md}
 
 # Make the project directory
-mkdir -p $BASE_PATH/$1
-pushd $BASE_PATH/$1
+DIR=$GOPATH/src/$BASE_PATH/$1
+mkdir -p $DIR
+pushd $DIR
 
 # Set up initial project state...
 
