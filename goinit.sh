@@ -21,8 +21,8 @@ if [[ "$GIT_INIT" = true ]]; then
     git init
 fi
 
-if [[ -z "$README" ]]; then
-    touch README.md
+if [[ "$README" != "" ]]; then
+    touch $README
 fi
 
 popd
