@@ -30,6 +30,8 @@ if [[ "$README" != "" ]]; then
     touch $README
 fi
 
+# Clean up
 popd > /dev/null
 
+# Ouput the name of the project to stdout
 echo $DIR
