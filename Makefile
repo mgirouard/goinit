@@ -1,3 +1,4 @@
+PREFIX ?= ./
 BINFILE ?= goinit
 RCFILE = $$HOME/.goinitrc
 
@@ -6,7 +7,7 @@ RCFILE = $$HOME/.goinitrc
 install: $(BINFILE) $(RCFILE)
 
 $(BINFILE):
-	cp ./goinit.sh $(BINFILE)
+	cp ./goinit.sh $(PREFIX)/$(BINFILE)
 
 $(RCFILE):
 ifneq ($(BASE_DIR),)
