@@ -4,6 +4,12 @@ Go Init
 Initializes a new project in `$GOPATH` and optionally does other stuff you
 might find helpful.
 
+The goal is to have a tool where you can simply call
+
+    vim $(goinit foobar)
+
+And be coding a new Golang project with some sane defaults.
+
 Installation
 ------------
 
