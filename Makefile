@@ -14,8 +14,8 @@ ifneq ($(BASE_DIR),)
 	echo 'BASE_DIR='$(BASE_DIR) > $(RCFILE)
 endif
 ifneq ($(README),)
-	echo 'README='$(README) > $(RCFILE)
+	echo 'README='$(README) >> $(RCFILE)
 endif
 ifneq ($(GIT_INIT),)
-	echo 'GIT_INIT='$(GIT_INIT) > $(RCFILE)
+	echo 'GIT_INIT='$(GIT_INIT) >> $(RCFILE)
 endif
