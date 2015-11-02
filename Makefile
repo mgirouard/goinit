@@ -1,10 +1,14 @@
-PREFIX ?= ./
+PREFIX ?= $(shell pwd)
 BINFILE ?= goinit
 RCFILE = $$HOME/.goinitrc
 
-.PHONY: install
+.PHONY: install clean
 
 install: $(BINFILE) $(RCFILE)
+
+clean:
+	rm -rf $(PREFIX)/$(BINFILE)
+	rm -rf $(RCFILE)
 
 $(BINFILE):
 	cp ./goinit.sh $(PREFIX)/$(BINFILE)
