@@ -14,8 +14,8 @@ $(BINFILE):
 	cp ./goinit.sh $(PREFIX)/$(BINFILE)
 
 $(RCFILE):
-ifneq ($(BASE_DIR),)
-	echo 'BASE_DIR='$(BASE_DIR) > $(RCFILE)
+ifneq ($(BASE_PATH),)
+	echo 'BASE_PATH='$(BASE_PATH) > $(RCFILE)
 endif
 ifneq ($(README),)
 	echo 'README='$(README) >> $(RCFILE)
