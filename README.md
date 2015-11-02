@@ -16,6 +16,17 @@ Installation
 Unless you plan on hacking on the project, you can just put `goinit.sh`
 somewhere in your `$PATH`.
 
+For easier updates and unistalls, it might make sense to clone the repo and 
+`make` a proper install.
+
+    git clone https://github.com/mgirouard/goinit
+    cd goinit
+    PREFIX=$HOME/bin make
+
+If you tell `make` any of the configuration fiels below, it will ensure they
+are added to a `.goinitrc` so you don't have to worry about passing them every
+time.
+
 Configuration
 -------------
 
